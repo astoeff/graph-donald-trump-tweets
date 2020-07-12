@@ -1,6 +1,8 @@
 # graph-donald-trump
 A single-page project that downloads Donald Trump tweets for 2014-2020 period from http://trumptwitterarchive.com/ and represents a few statistics using flask and Vue.js.
 
+![outlook](tweets-by-year.png)
+
 # Installation:
 
 1. Install MongoDB: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
