@@ -1,5 +1,5 @@
 # graph-donald-trump
-A single-page project that downloads Donald Trump tweets for 2014-2020 period from http://trumptwitterarchive.com/ and represents a few statistics using flask and Vue.js.
+A single-page project that downloads Donald Trump tweets for 2014-2020 period from [here](http://trumptwitterarchive.com/) and represents a few statistics using flask and Vue.js.
 
 ![outlook](tweets-by-year.png) ![outlook](tweets-by-day.png) ![outlook](tweets-containing-russia-by-day.png)
 
@@ -7,10 +7,10 @@ A single-page project that downloads Donald Trump tweets for 2014-2020 period fr
 # Installation:
 
 1. Install MongoDB: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
-2. Install pymongo: $ pip install pymongo
-3. Install flask: $ pip install Flask==1.0.2 Flask-Cors==3.0.7
-4. Install Vue.js: $ npm install -g @vue/cli@3.7.0
-5. Install axios: $ npm install axios@0.18.0 --save
+2. Install pymongo: `$ pip install pymongo`
+3. Install flask: `$ pip install Flask==1.0.2 Flask-Cors==3.0.7`
+4. Install Vue.js: `$ npm install -g @vue/cli@3.7.0`
+5. Install axios: `$ npm install axios@0.18.0 --save`
 
 # Start:
 
