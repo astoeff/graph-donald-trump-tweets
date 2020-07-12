@@ -1,7 +1,7 @@
 # graph-donald-trump
 A single-page project that downloads Donald Trump tweets for 2014-2020 period from http://trumptwitterarchive.com/ and represents a few statistics using flask and Vue.js.
 
-![outlook](tweets-by-year.png) ![outlook](tweets-by-day.png)
+![outlook](tweets-by-year.png) ![outlook](tweets-by-day.png) ![outlook](tweets-containing-russia-by-day.png)
 
 
 # Installation:
@@ -14,11 +14,11 @@ A single-page project that downloads Donald Trump tweets for 2014-2020 period fr
 
 # Start:
 
-$ mkdir graph-donald-trump-tweets
+`$ mkdir graph-donald-trump-tweets`
 
-$ cd graph-donald-trump-tweets
+`$ cd graph-donald-trump-tweets`
 
-$ sudo service mongod start
+`$ sudo service mongod start`
 
 Open a new terminal
 
