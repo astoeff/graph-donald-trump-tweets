@@ -12,23 +12,35 @@ A single-page project that downloads Donald Trump tweets for 2014-2020 period fr
 # Start:
 
 $ mkdir graph-donald-trump-tweets
+
 $ cd graph-donald-trump-tweets
+
 $ sudo service mongod start
 
 Open a new terminal
+
 $ mkdir graph-donald-trump-tweets
+
 $ cd graph-donald-trump-tweets
+
 $ sudo service mongod start
+
 $ cd flask-crud-vue/server
+
 $ python app.py
 
 Open a new terminal
+
 $ cd graph-donald-trump-tweets/flask-crud-vue/client
+
 $ npm run serve
 
 The statistics are visible on:
+
 https://localhost:8080/by-year
+
 https://localhost:8080/by-day
+
 https://localhost:8080/by-russia
 
 NOTE: check the port of the client (might not be 8080)!
