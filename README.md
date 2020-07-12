@@ -20,25 +20,25 @@ A single-page project that downloads Donald Trump tweets for 2014-2020 period fr
 
 `$ sudo service mongod start`
 
-Open a new terminal
+**Open a new terminal**
 
-$ mkdir graph-donald-trump-tweets
+`$ mkdir graph-donald-trump-tweets`
 
-$ cd graph-donald-trump-tweets
+`$ cd graph-donald-trump-tweets`
 
-$ sudo service mongod start
+`$ sudo service mongod start`
 
-$ cd flask-crud-vue/server
+`$ cd flask-crud-vue/server`
 
-$ python app.py
+`$ python app.py`
 
-Open a new terminal
+**Open a new terminal**
 
-$ cd graph-donald-trump-tweets/flask-crud-vue/client
+`$ cd graph-donald-trump-tweets/flask-crud-vue/client`
 
-$ npm run serve
+`$ npm run serve`
 
-The statistics are visible on:
+**The statistics are visible on:**
 
 https://localhost:8080/by-year
 
