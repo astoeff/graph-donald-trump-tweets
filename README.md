@@ -1,4 +1,4 @@
-# graph-donald-trump
+# graph-donald-trump-tweets
 A single-page project that downloads Donald Trump tweets for 2014-2020 period from [here](http://trumptwitterarchive.com/) and represents a few statistics using flask and Vue.js.
 
 ![outlook](tweets-by-year.png) ![outlook](tweets-by-day.png) ![outlook](tweets-containing-russia-by-day.png)
