@@ -6,37 +6,28 @@ A single-page project that downloads Donald Trump tweets for 2014-2020 period fr
 
 # Installation:
 
-1. Install MongoDB: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
-2. Install pymongo: `$ pip install pymongo`
-3. Install flask: `$ pip install Flask==1.0.2 Flask-Cors==3.0.7`
-4. Install Vue.js: `$ npm install -g @vue/cli@3.7.0`
-5. Install axios: `$ npm install axios@0.18.0 --save`
+1. Install MongoDB: https://docs.mongodb.com/manual/administration/install-community/
+2. Clone this repo: `$ git clone https://github.com/astoeff/graph-donald-trump-tweets.git`
+3. Navigate to it: `$ cd graph-donald-trump-tweets`
+4. Install pymongo: `$ pip install pymongo`
+5. Install flask: `$ pip install Flask==1.0.2 Flask-Cors==3.0.7`
+6. Start MongoDB database server:
 
-# Start:
+- `$ sudo service mongod start` on Linux / `$ brew services start mongodb-community` on macOS
 
-`$ mkdir graph-donald-trump-tweets`
+7. Open a new terminal in the same folder in order to download the tweet data and start the Flask server:
 
-`$ cd graph-donald-trump-tweets`
+- `$ python setup.py`
 
-`$ sudo service mongod start`
+- `$ python flask-crud-vue/server/app.py`
 
-**Open a new terminal**
+8. Open a new terminal in the same folder and build the front-end app:
 
-`$ mkdir graph-donald-trump-tweets`
+- `$ cd flask-crud-vue/client`
 
-`$ cd graph-donald-trump-tweets`
+- `$ npm install`
 
-`$ sudo service mongod start`
-
-`$ cd flask-crud-vue/server`
-
-`$ python app.py`
-
-**Open a new terminal**
-
-`$ cd graph-donald-trump-tweets/flask-crud-vue/client`
-
-`$ npm run serve`
+- `$ npm run serve`
 
 **The statistics are visible on:**
 
@@ -46,4 +37,4 @@ https://localhost:8080/by-day
 
 https://localhost:8080/by-russia
 
-NOTE: check the port of the client (might not be 8080)!
+NOTE: check the port of the client when executing the last command - it might be different than the default (8080)!
