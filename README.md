@@ -37,4 +37,8 @@ https://localhost:8080/by-day
 
 https://localhost:8080/by-russia
 
+**If you want to update statistics for 2020:**
+
+- `$ python update.py`
+
 NOTE: check the port of the client when executing the last command - it might be different than the default (8080)!
