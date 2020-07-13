@@ -26,13 +26,11 @@ export default {
         .then((res) => {
           this.msg = res.data;
           this.msg += '';
-          this.years_data = this.msg.split(/(\s+)/).filter((e) => e.trim().length > 1);
-          console.log(this.years_data[0]);
+          this.data_for_russia_per_day = this.msg.split(/(\s+)/).filter((e) => e.trim().length > 1);
           this.chartdata = {
             labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
             datasets: [
               {
-                label: 'Tweets count per year for 2014-2020',
                 backgroundColor: [
                   'Red',
                   'Green',
@@ -42,10 +40,11 @@ export default {
                   'Cyan',
                   'Brown',
                 ],
-                data: [Number(this.years_data[0]), Number(this.years_data[1]),
-                  Number(this.years_data[2]), Number(this.years_data[3]),
-                  Number(this.years_data[4]),
-                  Number(this.years_data[5]), Number(this.years_data[6])],
+                data: [Number(this.data_for_russia_per_day[0]),
+                  Number(this.data_for_russia_per_day[1]),
+                  Number(this.data_for_russia_per_day[2]), Number(this.data_for_russia_per_day[3]),
+                  Number(this.data_for_russia_per_day[4]), Number(this.data_for_russia_per_day[5]),
+                  Number(this.data_for_russia_per_day[6])],
               },
             ],
           };
@@ -62,5 +61,4 @@ export default {
     this.filldata();
   },
 };
-
 </script>

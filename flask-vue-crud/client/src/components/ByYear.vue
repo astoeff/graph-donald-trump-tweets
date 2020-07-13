@@ -19,18 +19,17 @@ export default {
         .then((res) => {
           this.msg = res.data;
           this.msg += '';
-          this.years_data = this.msg.split(/(\s+)/).filter((e) => e.trim().length > 1);
-          console.log(this.years_data[0]);
+          this.data_per_years = this.msg.split(/(\s+)/).filter((e) => e.trim().length > 1);
           this.chartdata = {
             labels: ['2014', '2015', '2016', '2017', '2018', '2019', '2020'],
             datasets: [
               {
                 label: 'Tweets count per year for 2014-2020',
                 backgroundColor: 'Darksalmon',
-                data: [Number(this.years_data[0]), Number(this.years_data[1]),
-                  Number(this.years_data[2]), Number(this.years_data[3]),
-                  Number(this.years_data[4]),
-                  Number(this.years_data[5]), Number(this.years_data[6])],
+                data: [Number(this.data_per_years[0]), Number(this.data_per_years[1]),
+                  Number(this.data_per_years[2]), Number(this.data_per_years[3]),
+                  Number(this.data_per_years[4]), Number(this.data_per_years[5]),
+                  Number(this.data_per_years[6])],
               },
             ],
           };
@@ -47,5 +46,4 @@ export default {
     this.filldata();
   },
 };
-
 </script>

@@ -27,18 +27,17 @@ export default {
         .then((res) => {
           this.msg = res.data;
           this.msg += '';
-          this.years_data = this.msg.split(/(\s+)/).filter((e) => e.trim().length > 1);
-          console.log(this.years_data[0]);
+          this.data_per_days = this.msg.split(/(\s+)/).filter((e) => e.trim().length > 1);
           this.chartdata = {
             labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
             datasets: [
               {
                 label: 'Tweets count per day of week for 2014-2020 period',
                 backgroundColor: 'MidnightBlue',
-                data: [Number(this.years_data[0]), Number(this.years_data[1]),
-                  Number(this.years_data[2]), Number(this.years_data[3]),
-                  Number(this.years_data[4]),
-                  Number(this.years_data[5]), Number(this.years_data[6])],
+                data: [Number(this.data_per_days[0]), Number(this.data_per_days[1]),
+                  Number(this.data_per_days[2]), Number(this.data_per_days[3]),
+                  Number(this.data_per_days[4]), Number(this.data_per_days[5]),
+                  Number(this.data_per_days[6])],
               },
             ],
           };
