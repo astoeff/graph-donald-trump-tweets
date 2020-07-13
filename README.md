@@ -41,4 +41,4 @@ https://localhost:8080/by-russia
 
 - `$ python update.py`
 
-NOTE: check the port of the client when executing the last command - it might be different than the default (8080)!
+NOTE: check the port of the client when executing `$ nmp run serve` - it might be different than the default (8080)!
